@@ -18,6 +18,6 @@ class DataService{
     ]
     
     func getCategories()->[Category]{
-        
+        return categories
     }
 }

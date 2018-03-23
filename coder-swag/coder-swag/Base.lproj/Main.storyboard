@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="65.5" width="375" height="537.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="143" id="OpD-GQ-l2y" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="143" id="OpD-GQ-l2y" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OpD-GQ-l2y" id="KPQ-gp-2ZP">
@@ -41,7 +41,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="Rme-2r-2pr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="142.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="136.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="136.5" id="FqM-Bg-lzN"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNR-5w-uyS">
                                                     <rect key="frame" x="102" y="56.5" width="170" height="30"/>
@@ -56,9 +59,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="cNR-5w-uyS" firstAttribute="centerX" secondItem="KPQ-gp-2ZP" secondAttribute="centerX" id="UNp-RU-55b"/>
-                                                <constraint firstItem="Rme-2r-2pr" firstAttribute="top" secondItem="KPQ-gp-2ZP" secondAttribute="top" id="aZC-iu-aUW"/>
+                                                <constraint firstItem="Rme-2r-2pr" firstAttribute="top" secondItem="KPQ-gp-2ZP" secondAttribute="top" constant="3" id="aZC-iu-aUW"/>
                                                 <constraint firstItem="Rme-2r-2pr" firstAttribute="leading" secondItem="KPQ-gp-2ZP" secondAttribute="leading" id="asR-q7-eaY"/>
-                                                <constraint firstAttribute="bottom" secondItem="Rme-2r-2pr" secondAttribute="bottom" id="oft-mY-ZhD"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rme-2r-2pr" secondAttribute="bottom" constant="3" id="oft-mY-ZhD"/>
                                                 <constraint firstItem="cNR-5w-uyS" firstAttribute="centerY" secondItem="KPQ-gp-2ZP" secondAttribute="centerY" id="y94-hI-tma"/>
                                                 <constraint firstAttribute="trailing" secondItem="Rme-2r-2pr" secondAttribute="trailing" id="znS-z5-19z"/>
                                             </constraints>
