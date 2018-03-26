@@ -35,8 +35,17 @@ class CategoriesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
     }
+    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC{
+            ProductsVC.initProducts(category: sender as! Category)
+        }
+        
+    }
+    
+    
 
 }
 
