@@ -34,6 +34,9 @@ class CategoriesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             return CategoryCell()
         }
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
 
 }
 

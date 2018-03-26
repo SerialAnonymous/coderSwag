@@ -90,17 +90,17 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="MCD-L7-NEZ"/>
                     <connections>
                         <outlet property="categoryTable" destination="yes-iX-97I" id="3FM-bm-UhE"/>
-                        <segue destination="K3K-Ue-Mwp" kind="show" id="813-Ff-kau"/>
+                        <segue destination="K3K-Ue-Mwp" kind="show" identifier="ProductsVC" id="813-Ff-kau"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="239.19999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="L1A-be-r5O">
             <objects>
-                <viewController id="K3K-Ue-Mwp" sceneMemberID="viewController">
+                <viewController id="K3K-Ue-Mwp" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="orW-Pq-TYY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
